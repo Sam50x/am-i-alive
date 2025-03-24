@@ -1,0 +1,50 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    gap: 40px;
+    background-color: beige;
+}
+
+.heart{
+    color: red;
+    font-size: 200px;
+    animation: heartbeat 2s infinite;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+@keyframes heartbeat{
+    0%{
+        transform: scale(0.9);
+    }
+
+    50%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        transform: scale(0.9);
+    }
+}
+
+.title{
+    font-size: 50px;
+    color: black;
+    padding: 10px;
+}
+
+.punchline{
+    font-size: 30px;
+    color: black;
+    padding: 10px;
+}
